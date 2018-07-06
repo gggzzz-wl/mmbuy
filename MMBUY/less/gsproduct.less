@@ -1,0 +1,185 @@
+@charset "UTF-8";
+
+@import "base";
+
+@base: 50;
+
+//公共的样式
+@import "common";
+
+//导航部分-------------------------------------------------------------------
+.nav {
+  width: 100%;
+  background-color: #fff;
+  position: relative;
+  > ul {
+    > li {
+      width: 33.33%;
+      float: left;
+      > a {
+        width: 100%;
+        height: 100%;
+        display: block;
+        p {
+          text-align: center;
+          height: 78rem/@base;
+          line-height: 78rem/@base;
+          font-size: 16rem/@base;
+
+          i {
+            width: 20rem/@base;
+            height: 20rem/@base;
+            display: inline-block;
+            position: relative;
+            top: 5rem/@base;
+          }
+        }
+
+      }
+    }
+  }
+
+  //  下拉京东-------------------------------------------------
+  .jd-ul {
+    position: absolute;
+    top: 78rem/@base;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    > li {
+      width: 100%;
+      height: 77rem/@base;
+      border: 1px solid #ccc;
+      padding: 0 10rem/@base;
+      position: relative;
+      > a {
+        display: block;
+        height: 77rem/@base;
+
+        p {
+          height: 77rem/@base;
+          line-height: 77rem/@base;
+          font-size: 16rem/@base;
+          float: left;
+        }
+      }
+
+    }
+    li.active {
+      background: url(../images/ok.svg) right center no-repeat;
+      background-size: 20rem/@base 20rem/@base;
+    }
+  }
+  //  下拉华北-------------------------------------------------
+  .hb-ul {
+    position: absolute;
+    top: 78rem/@base;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    > li {
+      width: 100%;
+      height: 77rem/@base;
+      border: 1px solid #ccc;
+      padding: 0 10rem/@base;
+      > a {
+        display: block;
+        height: 77rem/@base;
+
+        p {
+          height: 77rem/@base;
+          line-height: 77rem/@base;
+          font-size: 16rem/@base;
+          float: left;
+        }
+      }
+    }
+
+    li.active {
+      background: url(../images/ok.svg) right center no-repeat;
+      background-size: 20rem/@base 20rem/@base;
+    }
+  }
+
+}
+
+//产品部分------------------------------------------------------------------
+.product {
+  > ul {
+    padding: 10rem/@base;
+    > li {
+      width: 48%;
+      > a {
+        .main-img {
+          width: 363rem/@base;
+          height: 320rem/@base;
+          margin-bottom: 20rem/@base;
+          img {
+            width: 100%;
+            height: 100%;
+            display: block;
+          }
+        }
+        .tip {
+          width: 100%;
+          height: 16rem/@base;
+          margin-bottom: 10rem/@base;
+
+          p {
+            font-size: 12rem/@base;
+            color: #333;
+            line-height: 16rem/@base;
+          }
+
+        }
+        .other {
+          width: 100%;
+          height: 60rem/@base;
+          line-height: 60rem/@base;
+          margin-bottom: 10rem/@base;
+
+          .price {
+            float: left;
+          }
+          .btn {
+            width: 127rem/@base;
+            height: 60rem/@base;
+            line-height: 60rem/@base;
+            float: right;
+            background-color: #ff9501;
+            text-align: center;
+            border-radius: 5rem/@base;
+          }
+        }
+      }
+    }
+    li:nth-child(2n+1) {
+      float: left;
+    }
+    li:nth-child(2n) {
+      float: right;
+      margin-right: 10rem/@base;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

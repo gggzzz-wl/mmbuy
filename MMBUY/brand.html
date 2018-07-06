@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/brand.css">
+  <title>慢慢买</title>
+</head>
+<body>
+<div class="mmm-container">
+  <!--header-->
+  <div class="mmm-header">
+
+    <div class="logo">
+      <a href="#">
+        <img class="logo" src="./images//header_logo.png" alt="">
+      </a>
+    </div>
+
+    <div class="app">
+      <a href="#">
+        <img class="app" src="./images//header_app.png " alt="">
+      </a>
+    </div>
+
+  </div>
+
+  <!-- search -->
+  <div class="mmm-search">
+    <input class="inp" type="text" placeholder="请输入你想比价的商品">
+    <button class="btn">搜索</button>
+  </div>
+
+  <!--菜单栏-->
+  <div class="nav">
+    <h3 class="list">
+      <a href="index.html">首页></a>
+      <a href="category.html">全部分类></a>
+    </h3>
+  </div>
+
+  <!--brand-->
+  <div class="brand">
+    <p>
+      平板电视那个牌子好
+    </p>
+  </div>
+
+  <!--主体-->
+  <div class="main">
+  <ul class="clearfix main-last">
+    <!--坑--------------------------------------------------------------------->
+  </ul>
+</div>
+
+
+  <!--brand-->
+  <div class="brande">
+    <p>
+
+      平板电视产品销售排行
+
+    </p>
+  </div>
+  <!--产品-->
+  <div class="product">
+        <ul class="clearfix pro">
+          <!--坑-------------------------------------------------------------------------->
+        </ul>
+
+
+  </div>
+
+
+  <!--brand3-->
+  <div class="brand3">
+    <p>
+
+      电视最新评论
+
+    </p>
+  </div>
+
+
+  <!--评论-->
+  <div class="main1">
+
+    <ul class="clearfix main-last1">
+      <li>
+        <a href="#">
+          <div class="img-left">
+            <img src="./images/Thumb_201510001104382491.jpg" alt="">
+          </div>
+          <div class="wen-right">
+            <div class="title">
+              <p>乐视TV(Letv) 超3 X55 55英寸智能LED液晶 超级电视 4K超清电视</p>
+            </div>
+          </div>
+        </a>
+      </li>
+    </ul>
+
+    <div class="com-box">
+
+  </div>
+  </div>
+
+
+
+
+
+
+
+  <!--footer-->
+  <div class="footer">
+    <a class="login" href="#">登录</a>
+    <a class="resize" href="#">注册</a>
+    <a class="retu" href="#"><img src="http://www.zuyushop.com/wap/images/top.jpg"  alt="">返回顶部</a>
+  </div>
+
+
+
+  <!--foot-->
+  <div class="foot">
+    <p>
+      <a class="red" href="#">手机APP下载</a>
+      <a class="black" href="#">慢慢买手机版</a> -- 掌上比价平台
+    </p>
+    <p class="gray">
+      m.manmanbuy.com
+    </p>
+  </div>
+</div>
+
+
+
+<script src="./js/rem.js"></script>
+<script src="./lib/jquery/jquery.min.js"></script>
+<script src="./lib/artTemplate/template.js"></script>
+<script src="./js/brand.js"></script>
+
+<!--1.根据品牌的标题id获取该品牌标题下的十大品牌列表 并渲染到十大品牌列表里面-->
+<script type="text/html" id="tmp">
+{{each result as v i}}
+  <li>
+    <a href="#">
+      <div class="main-left">
+        <div class="box">1</div>
+      </div>
+      <div  class="main-right">
+        <div class="info">
+          <p>{{v.brandName}}</p>
+        </div>
+        <div class="detail">
+          <p>{{v.brandInfo}}</p>
+        </div>
+      </div>
+    </a>
+  </li>
+{{/each}}
+</script>
+
+
+
+<!--2.根据品牌的标题id获取该品牌标题下的十大品牌的销量排行列表商品 并渲染到该品牌的销量排行商品列表里面-->
+<script type="text/html" id="tpl">
+
+{{each result as v i}}
+  <li>
+    <a href="#">
+      <div  class="box-left">
+        {{#v.productImg}}
+      </div>
+      <div class="box-right">
+        <div class="title">
+          <p>{{v.productName}}</p>
+        </div>
+        <div class="price">
+          <span class="new">{{v.productPrice}}</span>
+
+          <div class="imgg">
+            <span><img src="./images/star.svg" alt=""></span>
+            <span><img src="./images/star.svg" alt=""></span>
+            <span><img src="./images/star.svg" alt=""></span>
+            <span><img src="./images/star.svg" alt=""></span>
+            <span><img src="./images/star.svg" alt=""></span>
+          </div>
+        </div>
+        <div class="other">
+          <span class="com1">{{v.productQuote}}</span>
+          <span class="com2">{{v.productCom}}</span>
+        </div>
+      </div>
+    </a>
+  </li>
+{{/each}}
+</script>
+
+
+<!--3.根据商品id获取该商品的评论信息然后渲染到页面上-->
+<script type="text/html" id="tpl3">
+  {{each result as v i}}
+
+    <div class="com-span">
+      <span class="user">{{v.comName}}:</span>
+      <div class="star">
+        <span><img src="./images/star.svg" alt=""></span>
+        <span><img src="./images/star.svg" alt=""></span>
+        <span><img src="./images/star.svg" alt=""></span>
+        <span><img src="./images/star.svg" alt=""></span>
+        <span><img src="./images/star.svg" alt=""></span>
+      </div>
+      <span class="time">{{v.comTime}}</span>
+    </div>
+    <div class="com">
+      <p>
+        {{v.comContent}}
+      </p>
+    </div>
+
+{{/each}}
+</script>
+
+</body>
+</html>

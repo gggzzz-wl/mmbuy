@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+
+@import "base";
+@base : 50;
+
+//公共的样式
+@import "common";
+
+.category{
+  border-radius: 5rem/@base;
+  border: 1px solid #ccc;
+  color: #ccc;
+    .title1{
+      width: 100%;
+      height: 40rem/@base;
+      line-height:40rem/@base;
+      display: block;
+      background:url(../images/arrow1.gif) right center no-repeat;
+      font-size: 16px;
+      font-weight: bold;
+      padding-left: 15rem/@base;
+      border-bottom: 1px solid #666;
+      background-color: #ededed;
+    }
+    .content{
+          li{
+            height: 40rem/@base;
+            line-height:40rem/@base;
+            width: 33.33%;
+            text-align: center;
+            float: left;
+            border-right: 1px solid #666;
+            border-bottom: 1px solid #666;
+          }
+        }
+
+}

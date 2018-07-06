@@ -1,0 +1,278 @@
+@charset "UTF-8";
+
+@import "base";
+@base : 50;
+
+//公共的样式
+@import "common";
+
+.nav {
+  height: 80rem/@base;
+  width: 100%;
+  background-image: linear-gradient(to bottom, #fff, #ccc);
+  padding: 0 10rem/@base;
+
+  .list {
+    height: 80rem/@base;
+    line-height: 80rem/@base;
+    a{
+      display: block;
+      font-size: 30rem/@base;
+      color: #000;
+      float: left;
+    }
+  }
+}
+
+.brand{
+  width: 80rem/@base;
+  width: 100%;
+  padding: 0 10rem/@base;
+  border-bottom: 1px solid #ccc;
+  background-color: #eee;
+  p{
+    line-height: 80rem/@base;
+    font-size: 18rem/@base;
+    color: #864f5a;
+    padding-left: 10rem/@base;
+  }
+}
+
+.main{
+  background-color: #fff;
+  margin-bottom: 50rem/@base;
+  >ul{
+    >li{
+      width: 100%;
+      height: 66rem/@base;
+      border-bottom: 1px solid #ccc;
+      padding: 10rem/@base;
+      >a{
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: url(../images/arrow-right.svg) right  center no-repeat;
+        background-size: 20rem/@base 20rem/@base;
+        .main-left{
+          width: 42rem/@base;
+          height: 42rem/@base;
+          float: left;
+          margin-right: 30rem/@base;
+         .box{
+           width: 100%;
+           height: 100%;
+           background-color: red;
+           color: #fff;
+           text-align: center;
+           line-height: 42rem/@base;
+         }
+        }
+        .main-right{
+          height: 100%;
+          overflow: hidden;
+
+          .info{
+            height: 21rem/@base;
+            line-height:21rem/@base;
+            font-size: 14rem/@base;
+            color: #000;
+          }
+          .detail{
+            height: 19rem/@base;
+            line-height:19rem/@base;
+            font-size: 12rem/@base;
+            color: red;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.brande{
+  width: 80rem/@base;
+  width: 100%;
+  padding: 0 10rem/@base;
+  border-bottom: 1px solid #ccc;
+  background-color: #eee;
+  p{
+    line-height: 80rem/@base;
+    font-size: 18rem/@base;
+    color: #864f5a;
+    padding-left: 10rem/@base;
+  }
+}
+
+
+.product{
+  padding: 10rem/@base;
+  >ul{
+    >li{
+      width: 100%;
+      height: 208rem/@base;
+      >a{
+        display: block;
+        width: 100%;
+        height: 100%;
+        .box-left{
+          width: 188rem/@base;
+          height: 188rem/@base;
+          float: left;
+          padding: 10rem/@base;
+          img{
+            width: 100%;
+            height: 100%;
+            display: block;
+          }
+        }
+        .box-right{
+          height: 100%;
+          overflow: hidden;
+          padding: 10rem/@base;
+          .title{
+            height: 75rem/@base;
+            p{
+              font-size: 14rem/@base;
+              color: #000;
+            }
+          }
+          .price{
+            height: 21rem/@base;
+            line-height:21rem/@base;
+            .new{
+              float: left;
+              font-size: 16rem/@base;
+              color: red;
+            }
+
+            .imgg{
+              float: right;
+              span{
+                display: block;
+                float: left;
+                img{
+                  display: inline-block;
+                  width: 20rem/@base;
+                  height: 20rem/@base;
+                  float: left;
+                }
+              }
+            }
+
+          }
+          .other{
+            height: 19rem/@base;
+            line-height:19rem/@base;
+            margin-top: 20rem/@base;
+            color: #ccc;
+            .com1{
+              margin-right: 20rem/@base;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.brand3{
+  width: 80rem/@base;
+  width: 100%;
+  padding: 0 10rem/@base;
+  border-bottom: 1px solid #ccc;
+  background-color: #eee;
+  p{
+    line-height: 80rem/@base;
+    font-size: 18rem/@base;
+    color: #864f5a;
+    padding-left: 10rem/@base;
+  }
+}
+
+
+
+.main1{
+  background-color: #fff;
+  padding: 10rem/@base;
+  >ul{
+    >li{
+      width: 100%;
+      height: 200rem/@base;
+      padding: 10rem/@base;
+      >a{
+        display: block;
+        width: 100%;
+        height: 100%;
+        .img-left{
+          width: 200rem/@base;
+          height:200rem/@base;
+          float: left;
+          img{
+            width: 100%;
+            height: 100%;
+            display: block;
+          }
+        }
+        .wen-right{
+          height: 100%;
+          overflow: hidden;
+          .title{
+            height: 21rem/@base;
+            p{
+              font-size: 14rem/@base;
+              line-height: 21rem/@base;
+              color: #000;
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+  .com-box{
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 10rem/@base;
+    .com-span{
+      width: 100%;
+      height: 20rem/@base;
+      line-height:20rem/@base;
+      .user{
+        float: left;
+        font-size: 12rem/@base;
+        color: #666;
+        margin-right: 20rem/@base;
+      }
+      .star{
+        float: left;
+        span{
+          display: block;
+          float: left;
+          img{
+            display: inline-block;
+            width: 20rem/@base;
+            height: 20rem/@base;
+            float: left;
+          }
+        }
+      }
+      .time{
+        float: right;
+        font-size: 12rem/@base;
+        color: #666;
+        margin-right: 20rem/@base;
+      }
+    }
+    .com{
+      margin-top: 10rem/@base;
+      font-size: 12rem/@base;
+      color: #000;
+    }
+  }
+}
+
+
+
+

@@ -1,0 +1,141 @@
+@charset "UTF-8";
+
+
+@import "base";
+@base : 50;
+
+//公共的样式
+@import "common";
+
+
+.mmm-header{
+  width: 100%;
+  height: 50rem/@base;
+  background-color: #ff841d;
+  position: relative;
+  padding-left:50rem/@base ;
+  padding-right:50rem/@base ;
+
+    .icon-return{
+      width: 50rem/@base;
+      height: 50rem/@base;
+      position: absolute;
+      top:0;
+      left:0;
+      background: url(../images/icon_bar.png) -93px 0px no-repeat;
+      background-size: 220px 132px;
+    }
+    .center{
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      height:50rem/@base;
+      line-height:50rem/@base;
+      font-size: 40rem/@base;
+      color: #fff;
+    }
+    .app{
+      width: 50rem/@base;
+      height: 50rem/@base;
+      position: absolute;
+      top:0;
+      right:0;
+    }
+}
+
+.money-main{
+  padding: 15rem/@base;
+  background-color: #fff;
+
+  a{
+    display: block;
+    width: 100% ;
+    height: 200rem/@base;
+    max-width: 750px;
+    padding: 15rem/@base;
+
+
+    .main-img{
+      width: 200rem/@base;
+      height: 200rem/@base;
+      float: left;
+    }
+
+    .main-info{
+      height:100%;
+      overflow: hidden;
+      position: relative;
+
+      .title{
+        font-size: 26rem/@base;
+        margin-top: 20rem/@base;
+        span{
+          color: orange;
+        }
+      }
+      .other{
+        width: 100%;
+        height: 35rem/@base;
+        line-height:35rem/@base;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        .fl{
+          font-size: 24rem/@base;
+          color: #666;
+        }
+        .fr{
+          font-size: 28rem/@base;
+          i{
+            background:url(../images/2.svg);
+            width: 15rem/@base;
+            height: 15rem/@base;
+            display: inline-block;
+            margin-right: 10rem/@base;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+//分页
+.pagination{
+  height: 94rem/@base;
+  width: 100%;
+  padding: 0 20rem/@base;
+  margin-top: 20rem/@base;
+  >ul{
+    >li{
+      float: left;
+      width: 33.33%;
+
+      .prev{
+        width: 165rem/@base;
+        height: 75rem/@base;
+        transition: none;
+        padding: 0;
+      }
+      .next{
+        width: 165rem/@base;
+        height: 75rem/@base;
+        transition: none;
+        padding: 0;
+      }
+      .mui-table-view{
+        width: 165rem/@base;
+        height: 75rem/@base;
+        border: 1px solid #ccc;
+        a{
+          display: block;
+          width: 100%;
+          height: 100%;
+          line-height:75rem/@base;
+          text-align: center;
+          padding: 0;
+        }
+      }
+    }
+  }
+}

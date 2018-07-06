@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./lib/mui/css/mui.css">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/productList.css">
+  <title>慢慢买</title>
+</head>
+<body>
+<div class="mmm-container">
+  <!--header-->
+  <div class="mmm-header">
+
+    <div class="logo">
+      <a href="#">
+        <img class="logo" src="./images//header_logo.png" alt="">
+      </a>
+    </div>
+
+    <div class="app">
+      <a href="#">
+        <img class="app" src="./images//header_app.png " alt="">
+      </a>
+    </div>
+
+  </div>
+
+  <!-- search -->
+  <div class="mmm-search">
+    <input class="inp" type="text" placeholder="请输入你想比价的商品">
+    <button class="btn">搜索</button>
+  </div> 
+
+  <!--productList-->
+  <div class="productList">
+    <div class="productList-header">
+        <!--坑-->
+    </div>
+    <div class="productList-main">
+      <ul>
+        <!--坑-->
+      </ul>
+    </div>
+
+    <!--分页-->
+    <div class="pagination">
+    <ul>
+      <li>
+        <button class="prev">上一页</button>
+      </li>
+      <li>
+        <ul class="mui-table-view">
+          <li class="mui-table-view-cell mui-collapse">
+            <a class="mui-navigate-right" href="#">1/3</a>
+            <div class="mui-collapse-content">
+              <p></p>
+            </div>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <button class="next">下一页</button>
+      </li>
+    </ul>
+    </div>
+  </div>
+
+
+
+
+  <!--footer-->
+  <div class="footer">
+    <a class="login" href="#">登录</a>
+    <a class="resize" href="#">注册</a>
+    <a class="retu" href="#"><img src="http://www.zuyushop.com/wap/images/top.jpg" alt="">返回顶部</a>
+  </div>
+
+
+  <!--foot-->
+  <div class="foot">
+    <p>
+      <a class="red" href="#">手机APP下载</a>
+      <a class="black" href="#">慢慢买手机版</a> -- 掌上比价平台
+    </p>
+    <p class="gray">
+      m.manmanbuy.com
+    </p>
+  </div>
+</div>
+
+
+<script src="./js/rem.js"></script>
+<script src="./lib/jquery/jquery.min.js"></script>
+<script src="./lib/mui/js/mui.js"></script>
+<script src="./lib/artTemplate/template.js"></script>
+<script src="./js/productList.js"></script>
+
+
+<!--根据分类id获取分类名称-->
+<script type="text/template" id="tpl">
+
+  <h3 class="list"><a href="index.html">首页</a> > <a href="category.html">全部分类</a> ><a  href="tv.html"></a> {{result[0].category}}></h3>
+  <button class="sbtn">筛选</button>
+
+</script>
+
+
+
+<!--商品列表-->
+<script type="text/template" id="tmp">
+
+{{each result as v i}}
+  <li>
+    <a href="productdetail.html?productId={{v.productId}}&category={{category}}&brandName={{v.brandName}}">
+
+      <div  class="productList-img">
+       {{#v.productImg}}
+      </div>
+
+      <div class="productList-info">
+        <p>{{v.productName}}</p>
+        <p class="price">{{v.productPrice}}</p>
+        <div class="con"><span>{{v.productQuote}}</span><span>{{v.productCom}}</span></div>
+      </div>
+    </a>
+  </li>
+{{/each}}
+</script>
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+@import "base";
+
+@base: 50;
+
+//公共的样式
+@import "common";
+
+.content{
+  background-color: #fff;
+  ul{
+    padding: 30rem/@base;
+    li{
+      float: left;
+      margin-right: 10rem/@base;
+      margin-top: 10rem/@base;
+      a{
+        display: inline-block;
+        border: 1px solid #666;
+        height: 90rem/@base;
+        background-color: #ccc;
+        line-height:90rem/@base;
+        img{
+          width: 16rem/@base;
+          height: 16rem/@base;
+          display: inline-block;
+          margin-left: 10rem/@base;
+        }
+        span{
+          margin-right: 10rem/@base;
+        }
+      }
+    }
+  }
+}

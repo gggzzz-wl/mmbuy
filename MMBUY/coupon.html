@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/coupon.css">
+  <title>慢慢买</title>
+</head>
+<body>
+<div class="mmm-container">
+  <!--header-->
+  <div class="mmm-header">
+    <div class="icon-return">
+      <a href="javascript:history.go(-1)">
+      </a>
+    </div>
+    <div class="center">优惠券</div>
+    <div class="app">
+      <a href="#">
+        <img class="app" src="./images/header_app.png " alt="">
+      </a>
+    </div>
+  </div>
+
+  <div class="list">
+    <ul class="clearfix list-food">
+
+    <!--坑-->
+
+    </ul>
+  </div>
+
+
+
+
+
+
+
+</div>
+
+
+<!--footer-->
+<div class="footer">
+  <a class="login" href="#">登录</a>
+  <a class="resize" href="#">注册</a>
+  <a class="retu" href="#"><img src="http://www.zuyushop.com/wap/images/top.jpg" alt="">返回顶部</a>
+</div>
+
+
+<!--foot-->
+<div class="foot">
+  <p>
+    <a class="red" href="#">手机APP下载</a>
+    <a class="black" href="#">慢慢买手机版</a> -- 掌上比价平台
+  </p>
+  <p class="gray">
+    m.manmanbuy.com
+  </p>
+</div>
+</div>
+
+
+<script src="./js/rem.js"></script>
+<script src="./lib/jquery/jquery.min.js"></script>
+<script src="./lib/artTemplate/template.js"></script>
+<script src="./js/coupon.js"></script>
+
+
+<!--优惠券标题-->
+<script type="text/html" id="tmp">
+{{each result as v i}}
+  <li>
+    <a href="couponproduct.html?couponId={{v.couponId}}">
+      <img src="{{v.couponImg}}" alt="">
+      <p>{{v.couponTitle}}</p>
+    </a>
+  </li>
+{{/each}}
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,89 @@
+@charset "UTF-8";
+
+
+@import "base";
+@base : 50;
+
+//公共的样式
+@import "common";
+
+.productList{
+
+
+
+
+}
+
+//  productList-main-------------------------------------------------------
+.productList-main{
+  background-color: #fff;
+  padding-top: 20rem/@base;
+  padding: 15rem/@base;
+  
+  
+  a{
+    display: block;
+    height: 140rem/@base;
+  }
+  .productList-img{
+    width: 140rem/@base;
+    height: 140rem/@base;
+    float: left;
+    margin-right: 15rem/@base;
+  }
+
+
+  .productList-info{
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+
+
+  .price{
+    color: red;
+  }
+
+  .con{
+    position: absolute;
+    bottom: 0;
+    left:0;
+    span{
+      margin-left: 10rem/@base;
+    }
+  }
+  }
+}
+
+
+
+//分页
+.pagination{
+  height: 94rem/@base;
+  width: 100%;
+ padding: 0 20rem/@base;
+    >ul{
+      >li{
+        float: left;
+        width: 33.33%;
+
+        .prev{
+          width: 165rem/@base;
+          height: 75rem/@base;
+        }
+        .next{
+          width: 165rem/@base;
+          height: 75rem/@base;
+        }
+        .mui-table-view{
+          width: 165rem/@base;
+          height: 75rem/@base;
+          a{
+            line-height:75rem/@base;
+            text-align: center;
+            padding: 0;
+            border: 1px solid #ccc;
+          }
+        }
+      }
+    }
+}

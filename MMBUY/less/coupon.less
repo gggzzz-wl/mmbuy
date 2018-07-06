@@ -1,0 +1,94 @@
+@charset "UTF-8";
+
+@import "base";
+@base : 50;
+
+//公共的样式
+@import "common";
+
+
+.mmm-header{
+  width: 100%;
+  height: 50rem/@base;
+  background-color: #f4483e;
+  position: relative;
+  padding-left:50rem/@base ;
+  padding-right:50rem/@base ;
+
+  .icon-return{
+    width: 50rem/@base;
+    height: 50rem/@base;
+    position: absolute;
+    top:0;
+    left:0;
+    background: url(../images/icon_bar.png) -93px 0px no-repeat;
+    background-size: 220px 132px;
+    a{
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+  }
+  .center{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    height:50rem/@base;
+    line-height:50rem/@base;
+    font-size: 40rem/@base;
+    color: #fff;
+  }
+  .app{
+    width: 50rem/@base;
+    height: 50rem/@base;
+    position: absolute;
+    top:0;
+    right:0;
+  }
+}
+
+//list--------------------------------------------------
+.list{
+  width: 100%;
+  height: 253rem/@base;
+  margin-top: 30rem/@base;
+  >ul{
+    >li{
+      width: 33.33%;
+      height: 100%;
+      float: left;
+      >a{
+        width: 100%;
+        height: 119rem/@base;
+        img{
+          width: 100rem/@base;
+          height: 100rem/@base;
+          margin: 0 auto;
+        }
+        p{
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

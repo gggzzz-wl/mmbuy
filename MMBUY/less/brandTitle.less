@@ -1,0 +1,70 @@
+@charset "UTF-8";
+
+@import "base";
+@base : 50;
+
+//公共的样式
+@import "common";
+body,html{
+  background-color: #fff;
+}
+
+.nav {
+  height: 80rem/@base;
+  width: 100%;
+  background-image: linear-gradient(to bottom, #fff, #ccc);
+  padding: 0 10rem/@base;
+
+  .list {
+    height: 80rem/@base;
+    line-height: 80rem/@base;
+    a{
+      display: block;
+      font-size: 30rem/@base;
+      color: #000;
+      float: left;
+    }
+  }
+}
+
+.brand{
+  width: 80rem/@base;
+  width: 100%;
+  padding: 0 10rem/@base;
+  margin-top:20rem/@base;
+  p{
+    background-color: #eee;
+    line-height: 80rem/@base;
+    font-size: 18rem/@base;
+    border: 1px solid #ccc;
+    color: #864f5a;
+    padding-left: 10rem/@base;
+  }
+}
+
+
+.category{
+  >ul{
+    >li{
+      width: 100%;
+      height: 82rem/@base;
+      background-color: #ccc;
+      border-radius: 5rem/@base;
+      margin-top: 10rem/@base;
+      border-bottom: 1px solid #666;
+      a{
+        display: block;
+        height: 82rem/@base;
+        width: 100%;
+        background: url(../images/arrow-right.svg) right center no-repeat;
+        background-size: 20rem/@base 20rem/@base;
+        p{
+          font-size: 30rem/@base;
+          font-weight: bold;
+          padding-left: 30rem/@base;
+          line-height:82rem/@base;
+        }
+      }
+    }
+  }
+}

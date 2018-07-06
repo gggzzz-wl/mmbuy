@@ -1,0 +1,271 @@
+@charset "UTF-8";
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 14px;
+  font-family: 'Microsoft YaHei', sans-serif;
+  background-color: #f5f5f5;
+}
+a {
+  color: #333;
+  text-decoration: none;
+}
+ul,
+ol {
+  list-style: none;
+}
+input[type="text"],
+input[type="search"],
+textarea {
+  border: none;
+  outline: none;
+  resize: none;
+  -webkit-appearance: none;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.clearfix::after {
+  content: "";
+  display: block;
+  visibility: hidden;
+  height: 0;
+  line-height: 0;
+  clear: both;
+}
+img {
+  display: block;
+  width: 100%;
+}
+.mmm-container {
+  max-width: 750px;
+  min-width: 320px;
+  background-color: #fff;
+}
+.mmm-header {
+  width: 100%;
+  height: 1rem;
+  background-color: #ff841d;
+  border-bottom: 1px solid #e6e6e6;
+  max-width: 750px;
+}
+.mmm-header .logo {
+  margin-left: 0.1rem;
+  float: left;
+  position: relative;
+}
+.mmm-header .logo img {
+  height: 0.5rem;
+  width: 3.7rem;
+  margin: 0 auto;
+  position: absolute;
+  top: 0.25rem;
+  left: 0.2rem;
+}
+.mmm-header .app {
+  float: right;
+  position: relative;
+}
+.mmm-header .app img {
+  width: 0.68rem;
+  height: 0.68rem;
+  position: absolute;
+  top: 0.16rem;
+  right: 0.16rem;
+}
+.mmm-search {
+  width: 100%;
+  height: 1rem;
+  background-color: #fff;
+  position: relative;
+  max-width: 750px;
+}
+.mmm-search .inp {
+  width: 10rem;
+  height: 0.6rem;
+  border-radius: 0.3rem;
+  background-color: #f1f1f1;
+  position: absolute;
+  top: 0.2rem;
+  left: 0.6rem;
+  padding-left: 0.4rem;
+}
+.mmm-search .btn {
+  width: 1.26rem;
+  height: 0.6rem;
+  line-height: 0.6rem;
+  text-align: center;
+  border-radius: 0.3rem;
+  background-color: #ff841d;
+  font-size: 0.32rem;
+  position: absolute;
+  top: 0.2rem;
+  right: 0.4rem;
+  border: none;
+  color: #fff;
+  padding: 0;
+  transition: none;
+}
+.recom-footer {
+  width: 100%;
+  height: 1.4rem;
+  background-color: #ff841d;
+  position: relative;
+  padding-left: 0.4rem;
+  margin-top: 0.6rem;
+  max-width: 750px;
+}
+.recom-footer span {
+  font-size: 0.6rem;
+  height: 1.4rem;
+  line-height: 1.4rem;
+  color: #fff;
+  text-align: center;
+}
+.recom-footer .more {
+  width: 0.8rem;
+  height: 0.8rem;
+  position: absolute;
+  top: 0.3rem;
+  right: 0.3rem;
+}
+.footer {
+  height: 0.68rem;
+  width: 100%;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  margin-top: 0.6rem;
+  max-width: 750px;
+}
+.footer a {
+  height: 0.68rem;
+  line-height: 0.68rem;
+  text-align: center;
+  float: left;
+  font-size: 0.28rem;
+}
+.footer a:nth-child(1) {
+  width: 4.5rem;
+}
+.footer a:nth-child(2) {
+  width: 4.5rem;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+.footer a:nth-child(3) {
+  width: 6rem;
+}
+.footer a:nth-child(3) img {
+  width: 0.3rem;
+  height: 0.3rem;
+  display: inline-block;
+}
+.foot {
+  text-align: center;
+  margin-top: 0.6rem;
+  max-width: 750px;
+}
+.foot .red {
+  color: red;
+}
+.foot .black {
+  color: #000;
+}
+.foot .gray {
+  color: gray;
+}
+.productList-header {
+  height: 1.6rem;
+  width: 100%;
+  background-image: linear-gradient(to bottom, #ffffff, #cccccc);
+  position: relative;
+  max-width: 750px;
+}
+.productList-header .list {
+  height: 1.6rem;
+  line-height: 1.6rem;
+  margin: 0;
+  float: left;
+}
+.productList-header .sbtn {
+  width: 2.8rem;
+  height: 1.2rem;
+  font-size: 0.4rem;
+  color: #000;
+  background-color: #ccc;
+  position: absolute;
+  bottom: 0.2rem;
+  right: 0.2rem;
+}
+.mmm-header {
+  width: 100%;
+  height: 1rem;
+  background-color: #ff841d;
+  position: relative;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.mmm-header .icon-return {
+  width: 1rem;
+  height: 1rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url(../images/icon_bar.png) -93px 0px no-repeat;
+  background-size: 220px 132px;
+}
+.mmm-header .icon-return a {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.mmm-header .center {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  height: 1rem;
+  line-height: 1rem;
+  font-size: 0.8rem;
+  color: #fff;
+}
+.mmm-header .app {
+  width: 1rem;
+  height: 1rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.category {
+  border-radius: 0.1rem;
+  border: 1px solid #ccc;
+  color: #ccc;
+}
+.category .title1 {
+  width: 100%;
+  height: 0.8rem;
+  line-height: 0.8rem;
+  display: block;
+  background: url(../images/arrow1.gif) right center no-repeat;
+  font-size: 16px;
+  font-weight: bold;
+  padding-left: 0.3rem;
+  border-bottom: 1px solid #666;
+  background-color: #ededed;
+}
+.category .content li {
+  height: 0.8rem;
+  line-height: 0.8rem;
+  width: 33.33%;
+  text-align: center;
+  float: left;
+  border-right: 1px solid #666;
+  border-bottom: 1px solid #666;
+}

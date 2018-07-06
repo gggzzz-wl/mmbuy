@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/moneyproduct.css">
+  <title>慢慢买</title>
+</head>
+<body>
+<div class="mmm-container">
+  <!--header-->
+  <div class="mmm-header">
+    <div class="icon-return">
+      <a href="javascript:history.go(-1)">
+      </a>
+    </div>
+    <div class="center">国内折扣</div>
+    <div class="app">
+      <a href="#">
+        <img class="app" src="./images/header_app.png " alt="">
+      </a>
+    </div>
+  </div>
+
+  <!--主体-->
+  <div class="content">
+
+    <!--坑-->
+
+  </div>
+
+  <!--二维码-->
+  <div class="img-box">
+    <img src="./images/4.png" alt="">
+  </div>
+
+  <div class="productComment">
+    <!--坑-->
+  </div>
+
+
+
+</div>
+
+
+<!--footer-->
+<div class="footer">
+  <a class="login" href="#">登录</a>
+  <a class="resize" href="#">注册</a>
+  <a class="retu" href="#"><img src="http://www.zuyushop.com/wap/images/top.jpg" alt="">返回顶部</a>
+</div>
+
+
+<!--foot-->
+<div class="foot">
+  <p>
+    <a class="red" href="#">手机APP下载</a>
+    <a class="black" href="#">慢慢买手机版</a> -- 掌上比价平台
+  </p>
+  <p class="gray">
+    m.manmanbuy.com
+  </p>
+</div>
+</div>
+
+
+<script src="./js/rem.js"></script>
+<script src="./lib/jquery/jquery.min.js"></script>
+<script src="./lib/artTemplate/template.js"></script>
+<script src="./js/moneyproduct.js"></script>
+
+<!--国内折扣商品详情-->
+<script type="text/template" id="tmp">
+{{each result as v i}}
+  <div class="title">
+    <p>{{v.productName}}</p>
+  </div>
+  <div class="info">
+    <span>{{v.productFrom}}</span>
+    <span>{{v.productTime}}</span>
+    <span>{{v.productTips}}</span>
+  </div>
+  <div class="con">
+    <div class="con-img fr">
+      {{#v.productImgSm}}
+    </div>
+    <div class="con-mess">
+      <p>{{v.productInfo2}}</p>
+    </div>
+    <div class="gobuy">
+      前往购买
+    </div>
+  </div>
+{{/each}}
+</script>
+
+
+</body>
+</html>
+
+
+<!--<div class="comment">-->
+  <!--<p>发表评论</p>-->
+  <!--<section></section>-->
+<!--</div>-->
+
+<!--<div class="elaborate">-->
+  <!--<input type="submit" valu="发表评论">-->
+<!--</div>-->
+
+
+
+
+<!--&lt;!&ndash;最新评论模块&ndash;&gt;-->
+<!--<div class="new-com">-->
+  <!--<p>最新评论</p>-->
+  <!--<ul class="clearfix">-->
+    <!--<li>-->
+      <!--<a href="#">-->
+        <!---->
+        <!--<div  class="new-user">-->
+          <!--<img src="http://home.manmanbuy.com/upface/face/1474348687_162.jpg" alt="">-->
+        <!--</div>-->
+        <!--<div class="new-info">-->
+          <!--<div class="name">-->
+            <!--<span class="user">Yan1994</span>-->
+            <!--<span class="time">2016/10/25 14:05:43</span>-->
+          <!--</div>-->
+          <!--<span class="content">喜欢</span>-->
+        <!--</div>-->
+      <!---->
+      <!--</a>-->
+    <!--</li>-->
+  <!--</ul>-->
+<!--</div>-->

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>慢慢买</title>
+</head>
+<body>
+    <div class="mmm-container">
+         <!--header-->
+        <div class="mmm-header">
+
+            <div class="logo">
+                <a href="#">
+                    <img class="logo" src="./images//header_logo.png" alt="">
+                </a>
+            </div>
+
+            <div class="app">
+                    <a href="#">
+                         <img class="app" src="./images//header_app.png " alt="">
+                    </a>
+                </div>
+
+        </div>
+
+        <!-- search -->
+        <div class="mmm-search">
+            <input class="inp" type="text" placeholder="请输入你想比价的商品">
+            <button class="btn">搜索</button>
+        </div>
+
+        <!-- nav -->
+        <div class="mmm-nav">
+
+        </div>
+
+        <!-- recom -->
+        <div class="mmm-recom">
+            <div class="recom-header">
+                <span>超值折扣推荐</span>
+                <img class="more" src="./images/more.png" alt="">
+            </div>
+            <div class="recom-main">
+                <ul>
+                    <!--坑-->
+                </ul>
+            </div>
+        </div>
+
+        <!--more-info-->
+        <div class="more-info">
+            <a href="#">更多优惠信息>></a>
+        </div>
+
+        <!--recom-footer-->
+        <div class="recom-footer">
+            <span>品牌排行</span>
+            <img class="more" src="./images/more.png" alt="">
+        </div>
+
+        <!--footer-->
+        <div class="footer">
+            <a class="login" href="#">登录</a>
+            <a class="resize" href="#">注册</a>
+            <a class="retu" href="#"><img src="http://www.zuyushop.com/wap/images/top.jpg"  alt="">返回顶部</a>
+        </div>
+
+
+
+        <!--foot-->
+        <div class="foot">
+            <p>
+                <a class="red" href="#">手机APP下载</a>
+                <a class="black" href="#">慢慢买手机版</a> -- 掌上比价平台
+            </p>
+            <p class="gray">
+                m.manmanbuy.com
+            </p>
+        </div>
+    </div>
+
+
+
+    <script src="./js/rem.js"></script>
+    <script src="./lib/jquery/jquery.min.js"></script>
+    <script src="./lib/artTemplate/template.js"></script>
+    <script src="./js/index.js"></script>
+
+
+    <!--菜单栏模板-->
+    <script type="text/html" id="tmp">
+        <ul class="clearfix">
+            {{each result as v i}}
+                <li class="{{v.indexmenuId===7?'more':''}}" {{i>7?'style=display:none':''}}>
+                    <a href="{{v.titlehref}}">
+                        {{#v.img}}
+                        <p>{{v.name}}</p>
+                    </a>
+                </li>
+            {{/each}}
+        </ul>
+    </script>
+
+
+    <!--模板引擎折扣列表中的数据-->
+    <script type="text/template" id="tpl">
+        {{each result as v i}}
+            <li>
+                <a href="#">
+                    <div class="main-img">
+                        {{#v.productImgSm}}
+                    </div>
+                    <div class="main-info">
+                        <p>{{v.productName}}
+                            <span>{{v.productPinkage}}</span></p>
+                        <div class="other">
+                            <span>{{v.productFrom}} | {{v.productTime}}</span>
+                            <span  class="icon-span"><i></i>1</span>
+                        </div>
+                    </div>
+                </a>
+            </li>
+        {{/each}}
+    </script>
+
+</body>
+</html>

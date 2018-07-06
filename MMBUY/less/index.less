@@ -1,0 +1,181 @@
+
+
+@import "base";
+@base : 50;
+
+//公共的样式
+@import "common";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.mmm-container{
+    width: 100%;
+    height: 3000px;
+    background-color: #f1f1f1;
+    margin: 0 auto;
+    max-width: 750px;
+    min-width:320px;
+}
+
+
+
+
+
+//mmm-nav--------------------------------------------------------------------
+.mmm-nav{
+    margin-top: 20rem/@base;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+
+
+}
+.mmm-nav ul li{
+    width: 25%;
+    float: left;
+    margin-top: 20rem/@base;
+    margin-bottom: 20rem/@base;
+
+    a{
+        display: block;
+        height:50rem/@base;
+        margin-bottom: 10rem/@base;
+
+        img{
+            width: 50rem/@base;
+            height:50rem/@base;
+            display: block;
+            margin:0 auto;
+        }
+        p{
+            height: 31rem/@base;
+            line-height:31rem/@base;
+            text-align: center;
+        }
+    }
+
+}
+
+//mmm-recom------------------------------------------------------------------
+.mmm-recom{
+
+   .recom-header{
+        width: 100%;
+        height: 70rem/@base;
+        background-color: #ff841d;
+        position: relative;
+        padding-left: 20rem/@base;
+
+        span{
+            font-size: 30rem/@base;
+            height: 70rem/@base;
+            line-height: 70rem/@base;
+            color: #fff;
+            text-align: center;
+
+        }
+
+        .more{
+            width: 40rem/@base;
+            height: 40rem/@base;
+            position: absolute;
+            top:15rem/@base;
+            right:15rem/@base ;
+        }
+    }
+
+
+    .recom-main{
+        padding: 10rem/@base 0;
+        background-color: #fff;
+
+        li{
+            border-bottom: 1px solid #ccc;
+            margin-top: 10rem/@base;
+
+            a{
+                display: block;
+                height: 200rem/@base;
+                width: 100%;
+            }
+
+            .main-img{
+                width: 200rem/@base;
+                height: 200rem/@base;
+                float: left;
+                padding: 10rem/@base ;
+            }
+
+            .main-info{
+                height: 200rem/@base;
+                overflow: hidden;
+                position: relative;
+                background-color: #fff;
+
+
+                p{
+                    font-size:30rem/@base;
+                    color: #000;
+                    span{
+                        font-size: 30rem/@base;
+                        color: orange;
+                    }
+                }
+                .other{
+                    width: 100%;
+                    height:35rem/@base;
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    span{
+                        font-size: 20rem/@base;
+                        color: #666;
+                    }
+                    .icon-span{
+                        float: right;
+
+                        i{
+                            display: inline-block;
+                            width: 15rem/@base;
+                            height:  15rem/@base;
+                            position: relative;
+                            background:url(../images/2.svg) no-repeat ;
+                            margin-right: 10rem/@base;
+                        }
+                    }
+                }
+
+            }
+        }
+
+
+    }
+}
+
+//more-info----------------------------------------------------------------
+.more-info {
+    width: 100%;
+    height: 32rem/@base;
+
+    a{
+
+        display: block;
+        text-align: center;
+        padding:10rem/@base;
+        line-height:32rem/@base;
+        border: 1px solid #ccc;
+    }
+
+}
+
+
+
+
+
+
+
+

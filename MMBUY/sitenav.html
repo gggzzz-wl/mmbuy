@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/sitenav.css">
+  <title>慢慢买</title>
+</head>
+<body>
+<div class="mmm-container">
+  <!--header-->
+  <div class="mmm-header">
+    <div class="icon-return">
+      <a href="javascript:history.go(-1)">
+      </a>
+    </div>
+    <div class="center">商场导航</div>
+    <div class="app">
+      <a href="#">
+        <img class="app" src="./images/header_app.png " alt="">
+      </a>
+    </div>
+  </div>
+
+<!--content部分-->
+  <div class="content">
+          <ul class="clearfix waterfull">
+
+
+            <li>
+              <a class="box" href="#">
+                <img src="http://misc.manmanbuy.com/images/hzweb/newegg.png" alt="">
+                <span>新蛋网</span>
+              </a>
+            </li>
+
+            <li>
+              <a class="box" href="#">
+                <img src="http://misc.manmanbuy.com/images/hzweb/newegg.png" alt="">
+                <span>新蛋网</span>
+              </a>
+            </li>
+
+            <li>
+              <a class="box" href="#">
+                <img src="http://misc.manmanbuy.com/images/hzweb/newegg.png" alt="">
+                <span>新蛋网</span>
+              </a>
+            </li>
+
+            <li>
+              <a class="box" href="#">
+                <img src="http://misc.manmanbuy.com/images/hzweb/newegg.png" alt="">
+                <span>新蛋网</span>
+              </a>
+            </li>
+
+            <li>
+              <a class="box" href="#">
+                <img src="http://misc.manmanbuy.com/images/hzweb/newegg.png" alt="">
+                <span>新蛋网</span>
+              </a>
+            </li>
+
+            <li>
+              <a class="box" href="#">
+                <img src="http://misc.manmanbuy.com/images/hzweb/newegg.png" alt="">
+                <span>新蛋网</span>
+              </a>
+            </li>
+
+            <li>
+              <a class="box" href="#">
+                <img src="http://misc.manmanbuy.com/images/hzweb/newegg.png" alt="">
+                <span>新蛋网</span>
+              </a>
+            </li>
+
+            <li>
+              <a class="box" href="#">
+                <img src="http://misc.manmanbuy.com/images/hzweb/newegg.png" alt="">
+                <span>新蛋网</span>
+              </a>
+            </li>
+
+            <li>
+              <a class="box" href="#">
+                <img src="http://misc.manmanbuy.com/images/hzweb/newegg.png" alt="">
+                <span>新蛋网</span>
+              </a>
+            </li>
+          </ul>
+  
+
+
+  </div>
+
+
+
+
+</div>
+
+
+
+
+<!--footer-->
+<div class="footer">
+  <a class="login" href="#">登录</a>
+  <a class="resize" href="#">注册</a>
+  <a class="retu" href="#"><img src="http://www.zuyushop.com/wap/images/top.jpg" alt="">返回顶部</a>
+</div>
+
+
+<!--foot-->
+<div class="foot">
+  <p>
+    <a class="red" href="#">手机APP下载</a>
+    <a class="black" href="#">慢慢买手机版</a> -- 掌上比价平台
+  </p>
+  <p class="gray">
+    m.manmanbuy.com
+  </p>
+</div>
+</div>
+
+
+<script src="./js/rem.js"></script>
+<script src="./lib/jquery/jquery.min.js"></script>
+<script src="./lib/artTemplate/template.js"></script>
+<script src="./js/sitenav.js"></script>
+
+<!--获取所有商城导航的列表信息 并渲染到页面上-->
+<script type="text/html" id="tmp">
+{{each result as v i}}
+  <li>
+    <a class="box" href="{{v.navHref}}">
+      <img src="{{v.navImg}}" alt="">
+      <span>{{v.navTitle}}</span>
+    </a>
+  </li>
+{{/each}}
+</script>
+
+</body>
+</html>
